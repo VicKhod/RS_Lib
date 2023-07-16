@@ -1,3 +1,9 @@
+.navigation ul, header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @font-face {
   font-family: "Inter";
   src: url(assets/fonts/Inter-Regular.ttf);
@@ -13,9 +19,18 @@
   src: url(assets/fonts/Forum-Regular.ttf);
   font-weight: 400;
 }
-header {
-  background: #0c0c0e;
-  color: #ffffff;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -23,14 +38,28 @@ a {
   color: #fff;
 }
 
+li {
+  list-style: none;
+}
+
+header {
+  justify-content: row;
+  background: #0c0c0e;
+  color: #ffffff;
+  height: 90px;
+  padding: 20px;
+}
+
 .BPL_logo {
-  color: #fff;
   font-family: Forum;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.6px;
+}
+
+.navigation ul {
+  justify-content: row;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
