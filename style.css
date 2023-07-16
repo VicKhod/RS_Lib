@@ -1,6 +1,26 @@
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Forum";
+  src: url(assets/fonts/Forum-Regular.ttf);
+  font-weight: 400;
+}
 header {
   background: #0c0c0e;
   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .BPL_logo {
@@ -9,7 +29,7 @@ header {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
   letter-spacing: 0.6px;
 }
 
