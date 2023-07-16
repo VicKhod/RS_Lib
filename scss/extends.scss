@@ -1,5 +1,5 @@
-%extend-display-flex {
+%extend-display-flex-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: row;
   align-items: center;
 }

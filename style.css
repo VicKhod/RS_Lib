@@ -1,6 +1,6 @@
-.navigation ul, header {
+.navigation ul, .navigation, header {
   display: flex;
-  justify-content: space-between;
+  justify-content: row;
   align-items: center;
 }
 
@@ -43,7 +43,7 @@ li {
 }
 
 header {
-  justify-content: row;
+  justify-content: space-between;
   background: #0c0c0e;
   color: #ffffff;
   height: 90px;
@@ -57,8 +57,12 @@ header {
   letter-spacing: 0.6px;
 }
 
+.navigation {
+  justify-content: space-evenly;
+  gap: 40px;
+}
 .navigation ul {
-  justify-content: row;
+  justify-content: center;
   gap: 30px;
 }
 

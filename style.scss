@@ -40,7 +40,7 @@ li {
 }
 
 header {
-  @include mixin-display-flex(row);
+  @include mixin-display-flex-row(space-between);
   background: #0c0c0e;
   color: #ffffff;
   height: 90px;
@@ -55,8 +55,11 @@ header {
 }
 
 .navigation {
+  @include mixin-display-flex-row(space-evenly);
+  gap: 40px;
+
   ul {
-    @include mixin-display-flex(row);
+    @include mixin-display-flex-row(center);
     gap: 30px;
   }
 }

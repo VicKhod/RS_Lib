@@ -1,7 +1,7 @@
 @import "./extends.scss";
 
-@mixin mixin-display-flex ($direction) {
-  justify-content: $direction;
+@mixin mixin-display-flex-row ($space) {
+  justify-content: $space;
 
-  @extend %extend-display-flex
+  @extend %extend-display-flex-row
 }
