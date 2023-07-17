@@ -55,10 +55,12 @@ header {
   letter-spacing: 0.6px;
 }
 
-.navigation {
+.header-menu {
   @include mixin-display-flex-row(space-evenly);
   gap: 40px;
+}
 
+.navigation {
   ul {
     @include mixin-display-flex-row(center);
     gap: 30px;

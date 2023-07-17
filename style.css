@@ -1,4 +1,4 @@
-.navigation ul, .navigation, header {
+.navigation ul, .header-menu, header {
   display: flex;
   justify-content: row;
   align-items: center;
@@ -15,7 +15,7 @@
   transform: scale(1.5);
 }
 
-.navigation ul, .navigation, header {
+.navigation ul, .header-menu, header {
   display: flex;
   justify-content: row;
   align-items: center;
@@ -85,10 +85,11 @@ header {
   letter-spacing: 0.6px;
 }
 
-.navigation {
+.header-menu {
   justify-content: space-evenly;
   gap: 40px;
 }
+
 .navigation ul {
   justify-content: center;
   gap: 30px;
