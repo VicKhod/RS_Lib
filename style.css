@@ -1,4 +1,4 @@
-.welcome__container, .navigation ul, .header-menu, header {
+.welcome, .navigation ul, .header-menu, header {
   display: flex;
   justify-content: row;
   align-items: center;
@@ -15,7 +15,7 @@
   transform: scale(1.5);
 }
 
-.welcome__container, .navigation ul, .header-menu, header {
+.welcome, .navigation ul, .header-menu, header {
   display: flex;
   justify-content: row;
   align-items: center;
@@ -101,7 +101,7 @@ header {
   justify-content: center;
   gap: 30px;
 }
-.welcome__container {
+.welcome {
   justify-content: flex-start;
   width: 1440px;
   height: 600px;

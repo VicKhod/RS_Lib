@@ -79,7 +79,7 @@ header {
   }
 }
 
-.welcome__container {
+.welcome {
   @include mixin-display-flex-row(flex-start);
   width: 1440px;
   height: 600px;
