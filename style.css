@@ -113,7 +113,7 @@ header {
 }
 
 .img-gradient::after {
-  z-index: 10;
+  z-index: 2;
   content: "";
   position: absolute;
   left: 0;
@@ -121,6 +121,26 @@ header {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%);
+}
+
+.welcome__text {
+  background-color: #0C0C0E;
+  width: 600px;
+  height: 220px;
+  padding: 35px 40px;
+}
+.welcome__text p {
+  margin: 0;
+  padding: 0;
+  width: 520px;
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
