@@ -3,3 +3,15 @@
   justify-content: row;
   align-items: center;
 }
+
+%extend-hover-link {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: rgb(0, 191, 255);
+    transform: scale(1.5);
+  }
+}

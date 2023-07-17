@@ -4,6 +4,34 @@
   align-items: center;
 }
 
+.navigation a {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.navigation a:hover {
+  color: rgb(0, 191, 255);
+  transform: scale(1.5);
+}
+
+.navigation ul, .navigation, header {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.navigation a {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.navigation a:hover {
+  color: rgb(0, 191, 255);
+  transform: scale(1.5);
+}
+
 @font-face {
   font-family: "Inter";
   src: url(assets/fonts/Inter-Regular.ttf);
