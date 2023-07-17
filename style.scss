@@ -24,7 +24,6 @@ html {
 * {
   box-sizing: border-box;
   padding: 0px;
-  margin: 0px;
 	border: none;
 }
 
@@ -32,6 +31,11 @@ body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0px auto;
 }
 
 a {
