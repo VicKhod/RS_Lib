@@ -105,7 +105,7 @@ header {
   justify-content: flex-start;
   width: 1440px;
   height: 600px;
-  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url(assets/images/85c1859f825ed82614b2036bc8be037f.jpeg), center, no-repeat;
+  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 40%), url(assets/images/85c1859f825ed82614b2036bc8be037f.jpeg), center, no-repeat;
   background-position: 100%;
   background-size: cover;
 }
