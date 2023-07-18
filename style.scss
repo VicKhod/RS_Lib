@@ -84,17 +84,18 @@ header {
   width: 1440px;
   height: 600px;
   background: linear-gradient(
-    180deg,
-    #0c0c0e 0%,
-    #0c0c0e 0.01%,
-    rgba(18, 18, 21, 0.1) 40%
-  ), url(assets/images/85c1859f825ed82614b2036bc8be037f.jpeg), center, no-repeat;
+      180deg,
+      #0c0c0e 0%,
+      #0c0c0e 0.01%,
+      rgba(18, 18, 21, 0.1) 40%
+    ),
+    url(assets/images/85c1859f825ed82614b2036bc8be037f.jpeg), center, no-repeat;
   background-position: 100%;
   background-size: cover;
 }
 
 .welcome__text {
-  background-color: #0C0C0E;
+  background-color: #0c0c0e;
   width: 600px;
   height: 220px;
   padding: 35px 40px;
@@ -112,4 +113,19 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
   }
+}
+
+h2 {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.about {
+  @include mixin-display-flex-col(center);
 }

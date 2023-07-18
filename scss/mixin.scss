@@ -5,3 +5,9 @@
 
   @extend %extend-display-flex-row
 };
+
+@mixin mixin-display-flex-col ($space) {
+  justify-content: $space;
+
+  @extend %extend-display-flex-col
+};
