@@ -166,22 +166,27 @@ img {
   object-fit: cover;
 }
 
-.about__buttons {
+.about__carousel {
   @include mixin-display-flex-row(center);
-  gap: 8px;
   margin: 40px;
-  
-  :first-child {
-    background-color: #BB945F;
-  }
+  gap: 2px;
 
-  div {
-  background-color: #0C0C0E;
+  a{
+    height: 26px;
+    width: 26px;
+  }
+}
+
+.circle {
+  background-color: #0c0c0e;
   display: block;
   border-radius: 50%;
   overflow: hidden;
   height: 16px;
   width: 16px;
   position: relative;
-  }
+}
+
+.another-color {
+  background-color: #BB945F;
 }
