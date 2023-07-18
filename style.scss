@@ -165,3 +165,23 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.about__buttons {
+  @include mixin-display-flex-row(center);
+  gap: 8px;
+  margin: 40px;
+  
+  :first-child {
+    background-color: #BB945F;
+  }
+
+  div {
+  background-color: #0C0C0E;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  }
+}

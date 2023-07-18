@@ -1,4 +1,4 @@
-.about__pics, .welcome, .navigation ul, .header-menu, header {
+.about__buttons, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,7 +21,7 @@
   transform: scale(1.5);
 }
 
-.about__pics, .welcome, .navigation ul, .header-menu, header {
+.about__buttons, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,6 +190,24 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about__buttons {
+  justify-content: center;
+  gap: 8px;
+  margin: 40px;
+}
+.about__buttons :first-child {
+  background-color: #BB945F;
+}
+.about__buttons div {
+  background-color: #0C0C0E;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 16px;
+  width: 16px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
