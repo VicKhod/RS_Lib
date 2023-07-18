@@ -1,10 +1,10 @@
-.seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.favorites, .about {
+.favorites__items aside, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +21,13 @@
   transform: scale(1.5);
 }
 
-.seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.favorites, .about {
+.favorites__items aside, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,12 +218,18 @@ img {
 }
 
 .favorites {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.favorites h2 {
+  text-align: center;
+}
+.favorites hr {
+  display: block;
 }
 
 .favorites__text p {
   color: #000;
-  text-align: center;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -247,6 +253,23 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.favorites__items {
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+.favorites__items aside {
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.favorites__item {
+  width: 550px;
+  height: 555px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
