@@ -130,7 +130,7 @@ h2 {
 
 hr {
   width: 50px;
-  border: 1px solid #0C0C0E;;
+  border: 1px solid #0c0c0e;
   margin: 0;
   padding: 0;
 }
@@ -172,7 +172,7 @@ img {
   margin: 40px;
   gap: 2px;
 
-  a{
+  a {
     height: 26px;
     width: 26px;
   }
@@ -189,9 +189,44 @@ img {
 }
 
 .another-color {
-  background-color: #BB945F;
+  background-color: #bb945f;
 }
 
 .favorites {
   @include mixin-display-flex-col(center);
 }
+
+.favorites__text {
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.seasons {
+  @include mixin-display-flex-row(flex-start);
+  gap: 90px;
+}
+
+.seasons__elem {
+  .seasons__elem__bold {
+    font-weight: 700;
+  }
+
+  label {
+    margin: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+

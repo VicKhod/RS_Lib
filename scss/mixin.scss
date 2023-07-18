@@ -11,3 +11,9 @@
 
   @extend %extend-display-flex-col
 };
+
+@mixin mixin-display-flex-col-start ($space) {
+  justify-content: $space;
+
+  @extend %extend-display-flex-col-start
+};

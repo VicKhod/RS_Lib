@@ -1,4 +1,4 @@
-.about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,7 +21,7 @@
   transform: scale(1.5);
 }
 
-.about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -158,7 +158,7 @@ h2 {
 
 hr {
   width: 50px;
-  border: 1px solid #0C0C0E;
+  border: 1px solid #0c0c0e;
   margin: 0;
   padding: 0;
 }
@@ -214,11 +214,39 @@ img {
 }
 
 .another-color {
-  background-color: #BB945F;
+  background-color: #bb945f;
 }
 
 .favorites {
   justify-content: center;
+}
+
+.favorites__text p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.seasons {
+  justify-content: flex-start;
+  gap: 90px;
+}
+
+.seasons__elem .seasons__elem__bold {
+  font-weight: 700;
+}
+.seasons__elem label {
+  margin: 20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
