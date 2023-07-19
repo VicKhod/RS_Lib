@@ -21,6 +21,10 @@
   transform: scale(1.5);
 }
 
+section:not(.welcome) {
+  padding: 20px 20px 40px;
+}
+
 .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
@@ -42,6 +46,10 @@
 .navigation a:hover {
   color: rgb(0, 191, 255);
   transform: scale(1.5);
+}
+
+section:not(.welcome) {
+  padding: 20px 20px 40px;
 }
 
 @font-face {
