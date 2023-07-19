@@ -25,6 +25,11 @@ section:not(.welcome) {
   padding: 20px 20px 40px;
 }
 
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
 .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
@@ -50,6 +55,11 @@ section:not(.welcome) {
 
 section:not(.welcome) {
   padding: 20px 20px 40px;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -98,6 +108,25 @@ li {
   list-style: none;
 }
 
+h2 {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+hr {
+  width: 50px;
+  border: 1px solid #0c0c0e;
+  margin: 20px auto 40px;
+  padding: 0;
+}
+
 header {
   justify-content: space-between;
   background: #0c0c0e;
@@ -138,8 +167,6 @@ header {
   padding: 35px 40px;
 }
 .welcome__text p {
-  margin: 0;
-  padding: 0;
   width: 520px;
   color: #fff;
   text-align: center;
@@ -149,26 +176,6 @@ header {
   line-height: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-h2 {
-  color: #0c0c0e;
-  font-family: Forum;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 100% */
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  margin: 20px 0;
-  padding: 0;
-}
-
-hr {
-  width: 50px;
-  border: 1px solid #0c0c0e;
-  margin: 0;
-  padding: 0;
 }
 
 .about {
@@ -188,6 +195,7 @@ hr {
 .about__pics {
   justify-content: center;
   gap: 25px;
+  margin: 20px 0 0;
 }
 .about__pics div {
   width: 450px;
@@ -203,7 +211,7 @@ img {
 
 .about__carousel {
   justify-content: center;
-  margin: 40px;
+  margin-top: 40px;
   gap: 2px;
 }
 .about__carousel a {
@@ -228,12 +236,6 @@ img {
 .favorites {
   display: flex;
   flex-direction: column;
-}
-.favorites h2 {
-  text-align: center;
-}
-.favorites hr {
-  display: block;
 }
 
 .favorites__text p {

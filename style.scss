@@ -52,6 +52,29 @@ li {
   list-style: none;
 }
 
+h2, p {
+  @extend %extend-margin-padding-none;
+}
+
+h2 {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+hr {
+  width: 50px;
+  border: 1px solid #0c0c0e;
+  margin: 20px auto 40px;
+  padding: 0;
+}
+
 header {
   @include mixin-display-flex-row(space-between);
   background: #0c0c0e;
@@ -105,8 +128,6 @@ header {
   padding: 35px 40px;
 
   p {
-    margin: 0;
-    padding: 0;
     width: 520px;
     color: #fff;
     text-align: center;
@@ -117,26 +138,6 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
   }
-}
-
-h2 {
-  color: #0c0c0e;
-  font-family: Forum;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 100% */
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  margin: 20px 0;
-  padding: 0;
-}
-
-hr {
-  width: 50px;
-  border: 1px solid #0c0c0e;
-  margin: 0;
-  padding: 0;
 }
 
 .about {
@@ -157,6 +158,7 @@ hr {
 .about__pics {
   @include mixin-display-flex-row(center);
   gap: 25px;
+  margin: 20px 0 0;
 
   div {
     width: 450px;
@@ -173,7 +175,7 @@ img {
 
 .about__carousel {
   @include mixin-display-flex-row(center);
-  margin: 40px;
+  margin-top: 40px;
   gap: 2px;
 
   a {
@@ -199,19 +201,9 @@ img {
 .favorites {
   display: flex;
   flex-direction: column;
-
-  h2 {
-    text-align: center;
-  }
-
-  hr {
-    display: block;
-    
-  }
 }
 
 .favorites__text {
-  
   p {
     color: #000;
     font-family: Inter;
