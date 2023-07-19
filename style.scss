@@ -209,7 +209,7 @@ img {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bolder;
     line-height: normal;
   }
 }
@@ -217,6 +217,7 @@ img {
 .seasons {
   @include mixin-display-flex-row(flex-start);
   gap: 90px;
+  margin: 40px 0;
 }
 
 .seasons__elem {
@@ -225,7 +226,7 @@ img {
   }
 
   label {
-    margin: 20px;
+    margin-left: 20px;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -236,7 +237,6 @@ img {
 }
 
 .favorites__items {
-  padding: 40px 20px;
   @include mixin-display-flex-row(space-between);
 
   aside {
