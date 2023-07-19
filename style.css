@@ -25,7 +25,8 @@ section:not(.welcome) {
   padding: 20px 20px 40px;
 }
 
-h2, p {
+.favorites__item h6, h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -57,7 +58,8 @@ section:not(.welcome) {
   padding: 20px 20px 40px;
 }
 
-h2, p {
+.favorites__item h6, h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -280,6 +282,50 @@ img {
   flex-shrink: 0;
   border: 1px solid #000;
   background: #fff;
+}
+.favorites__item h6 {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.favorites__item p {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.favorites__item article {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.favorites__item button {
+  width: 75px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background: none;
+}
+.favorites__item img {
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

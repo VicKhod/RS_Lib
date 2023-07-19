@@ -52,7 +52,8 @@ li {
   list-style: none;
 }
 
-h2, p {
+h2,
+p {
   @extend %extend-margin-padding-none;
 }
 
@@ -251,4 +252,54 @@ img {
   flex-shrink: 0;
   border: 1px solid #000;
   background: #fff;
+
+  h6 {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    @extend %extend-margin-padding-none;
+  }
+
+  p {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  article {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+
+  button {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0c0c0e;
+    background: none;
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
 }
