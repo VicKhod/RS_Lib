@@ -299,10 +299,11 @@ img {
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 266.667% */
+    line-height: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  
   p {
     color: #000;
     font-family: Inter;
@@ -315,7 +316,7 @@ img {
   }
 
   article {
-    @extend %extend-margin-padding-none;
+    margin: 20px 0 15px;
     height: 320px;
     width: 355px;
     color: #000;
@@ -334,7 +335,15 @@ img {
     border-radius: 2px;
     border: 1px solid #0c0c0e;
     background: none;
-    // position: absolute;
+    color: #0c0c0e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 9px 27px;
   }
 
   img {
