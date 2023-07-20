@@ -255,6 +255,20 @@ img {
   margin: 40px 0;
 }
 
+.seasons__elem input[type=radio] {
+  cursor: pointer;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #000000;
+}
+.seasons__elem input[type=radio]:checked {
+  box-shadow: 0 0 0 2px #000000;
+  background-color: #000000;
+}
 .seasons__elem .seasons__elem__bold {
   font-weight: 700;
 }
