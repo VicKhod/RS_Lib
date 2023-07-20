@@ -166,7 +166,6 @@ header {
   div {
     width: 450px;
     height: 560px;
-    flex-shrink: 0;
   }
 }
 
@@ -269,7 +268,6 @@ img {
 .favorites__item {
   width: 550px;
   height: 555px;
-  flex-shrink: 0;
   border: 1px solid #000;
   background: #fff;
 
@@ -310,7 +308,6 @@ img {
   button {
     width: 75px;
     height: 30px;
-    flex-shrink: 0;
     border-radius: 2px;
     border: 1px solid #0c0c0e;
     background: none;
@@ -319,7 +316,9 @@ img {
   img {
     width: 200px;
     height: 300px;
-    flex-shrink: 0;
     z-index: 2;
+    position: relative;
+    left: 291px;
+    top: -142px;
   }
 }
