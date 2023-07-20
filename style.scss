@@ -289,8 +289,8 @@ img {
 
   .favorites__item__line {
     width: 60px;
-    height: 1px;
-    background: #bb945f;
+    border: 1px solid #bb945f;
+    margin: 0 0 20px;
   }
 
   .favorites__item__title {
@@ -303,7 +303,7 @@ img {
     letter-spacing: 2px;
     text-transform: uppercase;
   }
-  
+
   p {
     color: #000;
     font-family: Inter;
@@ -351,7 +351,7 @@ img {
     height: 300px;
     z-index: 2;
     position: relative;
-    left: 291px;
-    top: -142px;
+    left: 369px;
+    top: -288px;
   }
 }

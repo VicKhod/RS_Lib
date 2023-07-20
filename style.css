@@ -315,8 +315,8 @@ img {
 }
 .favorites__item .favorites__item__line {
   width: 60px;
-  height: 1px;
-  background: #bb945f;
+  border: 1px solid #bb945f;
+  margin: 0 0 20px;
 }
 .favorites__item .favorites__item__title {
   color: #000;
@@ -372,8 +372,8 @@ img {
   height: 300px;
   z-index: 2;
   position: relative;
-  left: 291px;
-  top: -142px;
+  left: 369px;
+  top: -288px;
 }
 
 /*# sourceMappingURL=style.css.map */
