@@ -322,7 +322,7 @@ img {
     margin: 20px 0 15px;
     width: 355px;
   }
-  
+
   article {
     color: #000;
     font-family: Inter;
@@ -355,13 +355,12 @@ img {
     width: 200px;
     height: 300px;
     z-index: 2;
-    position: relative;
-    left: 369px;
-    top: -288px;
+    position: absolute;
+    left: 1%;
+    top: 1%;
   }
 }
 
 .variants-of-favorites {
-  // display: flex;
-  // flex-direction: column;
+  // display: none;
 }

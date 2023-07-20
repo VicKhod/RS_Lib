@@ -376,9 +376,9 @@ img {
   width: 200px;
   height: 300px;
   z-index: 2;
-  position: relative;
-  left: 369px;
-  top: -288px;
+  position: absolute;
+  left: 1%;
+  top: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
