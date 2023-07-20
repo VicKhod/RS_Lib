@@ -82,7 +82,9 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   padding: 0px;
   border: none;
@@ -258,22 +260,24 @@ img {
 .seasons__elem input[type=radio] {
   cursor: pointer;
   appearance: none;
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: #ffffff;
   border: 3px solid #ffffff;
   box-shadow: 0 0 0 2px #000000;
+  transform: translateY(3px);
 }
 .seasons__elem input[type=radio]:checked {
   box-shadow: 0 0 0 2px #000000;
   background-color: #000000;
+  border-width: 4px;
 }
 .seasons__elem .seasons__elem__bold {
   font-weight: 700;
 }
 .seasons__elem label {
-  margin-left: 20px;
+  margin-left: 19px;
   color: #000;
   font-family: Inter;
   font-size: 20px;
