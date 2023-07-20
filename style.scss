@@ -260,9 +260,13 @@ img {
   @include mixin-display-flex-row(space-between);
 
   aside {
-    @include mixin-display-flex-col(space-between);
+    @include mixin-display-flex-col(center);
     gap: 40px;
   }
+}
+
+.favorites__items__right-col {
+  margin-right: 40px;
 }
 
 .favorites__item {
@@ -314,11 +318,12 @@ img {
     letter-spacing: 2px;
     text-transform: capitalize;
   }
-
-  article {
+  div {
     margin: 20px 0 15px;
-    height: 320px;
     width: 355px;
+  }
+  
+  article {
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -354,4 +359,8 @@ img {
     left: 369px;
     top: -288px;
   }
+}
+
+.variants-of-favorites {
+  // display: none;
 }

@@ -289,8 +289,12 @@ img {
   justify-content: space-between;
 }
 .favorites__items aside {
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
+}
+
+.favorites__items__right-col {
+  margin-right: 40px;
 }
 
 .favorites__item {
@@ -338,10 +342,11 @@ img {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-.favorites__item article {
+.favorites__item div {
   margin: 20px 0 15px;
-  height: 320px;
   width: 355px;
+}
+.favorites__item article {
   color: #000;
   font-family: Inter;
   font-size: 15px;
