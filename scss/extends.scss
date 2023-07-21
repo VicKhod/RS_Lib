@@ -1,13 +1,11 @@
 %extend-display-flex-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 %extend-display-flex-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 %extend-hover-link {

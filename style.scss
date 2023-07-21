@@ -29,9 +29,8 @@ html {
 }
 
 body {
+  @include mixin-display-flex-col(space-evenly, center);
   font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
   background-color: #9a9a9a;
 }
 
@@ -79,7 +78,7 @@ hr:not(.favorites__item__line, .coffee-shop__container__col__line) {
 }
 
 header {
-  @include mixin-display-flex-row(space-between);
+  @include mixin-display-flex-row(space-between, center);
   background: #0c0c0e;
   color: #ffffff;
   height: 90px;
@@ -95,13 +94,13 @@ header {
 }
 
 .header-menu {
-  @include mixin-display-flex-row(space-evenly);
+  @include mixin-display-flex-row(space-evenly, center);
   gap: 40px;
 }
 
 .navigation {
   ul {
-    @include mixin-display-flex-row(center);
+    @include mixin-display-flex-row(center, center);
     gap: 30px;
   }
 
@@ -111,7 +110,7 @@ header {
 }
 
 .welcome {
-  @include mixin-display-flex-row(flex-start);
+  @include mixin-display-flex-row(flex-start, center);
   height: 600px;
   background: linear-gradient(
       180deg,
@@ -144,7 +143,7 @@ header {
 }
 
 .about {
-  @include mixin-display-flex-col(center);
+  @include mixin-display-flex-col(center, center);
   height: 837px;
 
   p {
@@ -159,7 +158,7 @@ header {
 }
 
 .about__pics {
-  @include mixin-display-flex-row(center);
+  @include mixin-display-flex-row(center, center);
   gap: 25px;
   margin: 20px 0 0;
 
@@ -176,7 +175,7 @@ img {
 }
 
 .about__carousel {
-  @include mixin-display-flex-row(center);
+  @include mixin-display-flex-row(center, center);
   margin-top: 40px;
   gap: 2px;
 
@@ -218,7 +217,7 @@ img {
 }
 
 .seasons {
-  @include mixin-display-flex-row(flex-start);
+  @include mixin-display-flex-row(flex-start, center);
   gap: 90px;
   margin: 40px 0;
 }
@@ -258,10 +257,10 @@ img {
 }
 
 .favorites__items {
-  @include mixin-display-flex-row(space-between);
+  @include mixin-display-flex-row(space-between, center);
 
   aside {
-    @include mixin-display-flex-col(center);
+    @include mixin-display-flex-col(center, center);
     gap: 40px;
   }
 }
@@ -271,9 +270,7 @@ img {
 }
 
 .favorites__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include mixin-display-flex-col(space-evenly, flex-start);
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -380,12 +377,11 @@ img {
 }
 
 .coffee-shop__container {
-  @include mixin-display-flex-row(space-between);
+  @include mixin-display-flex-row(space-between, center);
 }
 
 .coffee-shop__container__col {
-  display: flex;
-  flex-direction: column;
+  @include mixin-display-flex-col(space-between, flex-end);
   gap: 40px;
   width: 438px;
 }
@@ -396,10 +392,10 @@ img {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  
+
   .title-left {
     text-align: left;
     margin: 0 auto;
@@ -437,4 +433,23 @@ img {
   width: 100px;
   height: 1px;
   background-color: #bb945f;
+}
+
+.contacts__container {
+  @include mixin-display-flex-row(space-between, center);
+}
+
+.contacts__container__text {
+  @include mixin-display-flex-col(space-evenly, center);
+}
+
+.contacts__container__map {
+  width: 696px;
+  height: 414px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
