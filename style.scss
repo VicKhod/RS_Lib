@@ -384,12 +384,10 @@ img {
 }
 
 .coffee-shop__container__col {
-  width: 438px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
   gap: 40px;
+  width: 438px;
 }
 
 .coffee-shop__container__col__title {
@@ -401,12 +399,23 @@ img {
   line-height: 40px; /* 100% */
   letter-spacing: 2px;
   text-transform: capitalize;
+  
+  .title-left {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .title-right {
+    text-align: right;
+    margin: 0 auto;
+  }
 }
 
 .coffee-shop__container__col__item {
-  @include mixin-display-flex-row(flex-end);
-  gap: 60px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 197px 100px 21px;
+  align-items: center;
+  column-gap: 60px;
 
   p {
     color: #000;
@@ -426,5 +435,6 @@ img {
 
 .coffee-shop__container__col__line {
   width: 100px;
-  border: 1px solid #bb945f;
+  height: 1px;
+  background-color: #bb945f;
 }
