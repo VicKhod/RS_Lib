@@ -237,7 +237,7 @@ img {
 }
 
 .favorites {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -379,6 +379,10 @@ img {
   position: relative;
   left: 369px;
   top: -288px;
+}
+
+.variants-of-favorite {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

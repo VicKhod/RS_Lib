@@ -201,7 +201,7 @@ img {
 }
 
 .favorites {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -361,6 +361,6 @@ img {
   }
 }
 
-.variants-of-favorites {
-  // display: none;
+.variants-of-favorite {
+  display: none;
 }
