@@ -466,8 +466,23 @@ img {
 }
 
 .contacts__container__text {
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 414px;
+}
+.contacts__container__text p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.contacts__container__text p strong {
+  font-weight: 700;
 }
 
 .contacts__container__map {

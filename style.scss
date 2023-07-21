@@ -440,7 +440,24 @@ img {
 }
 
 .contacts__container__text {
-  @include mixin-display-flex-col(space-evenly, center);
+  @include mixin-display-flex-col(space-between, flex-start);
+  height: 414px;
+
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    strong {
+      font-weight: 700;
+    }
+  }
 }
 
 .contacts__container__map {
