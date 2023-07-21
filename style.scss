@@ -200,6 +200,7 @@ img {
   background-color: #bb945f;
 }
 
+// ! Не забыть раскомментировать
 .favorites {
   display: none;
   flex-direction: column;
@@ -322,7 +323,7 @@ img {
     margin: 20px 0 15px;
     width: 355px;
   }
-  
+
   article {
     color: #000;
     font-family: Inter;
@@ -364,3 +365,4 @@ img {
 .variants-of-favorite {
   display: none;
 }
+
