@@ -447,9 +447,13 @@ img {
   @include mixin-display-flex-col(space-between, flex-start);
   height: 414px;
 
+  div {
+    @include mixin-display-flex-col(space-between, flex-start);
+    gap: 20px;
+  }
+
   p {
     color: #000;
-    text-align: center;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -693,7 +697,6 @@ footer {
   @include mixin-display-flex-row(space-between, center);
 
   p {
-    // height: 22px;
     flex-shrink: 0;
     color: #fff;
     white-space: nowrap;
@@ -701,7 +704,7 @@ footer {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 100% */
+    line-height: 20px;
     letter-spacing: 2px;
   }
 }
