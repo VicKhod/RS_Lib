@@ -1,9 +1,9 @@
-.contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.library-card__container__card, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -29,12 +29,12 @@ p {
   padding: 0;
 }
 
-.contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.library-card__container__card, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -493,6 +493,16 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.library-card__container {
+  justify-content: space-between;
+  align-items: none;
+}
+
+.library-card__container__card {
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

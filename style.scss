@@ -470,3 +470,11 @@ img {
     object-fit: cover;
   }
 }
+
+.library-card__container {
+  @include mixin-display-flex-row(space-between, none)
+}
+
+.library-card__container__card {
+  @include mixin-display-flex-col(space-between, center)
+}
