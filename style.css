@@ -583,7 +583,6 @@ img {
 .library-card__container__get-card .get-card__title {
   text-align: end;
   color: #000;
-  text-align: center;
   font-family: Forum;
   font-size: 30px;
   font-style: normal;
@@ -593,20 +592,21 @@ img {
 }
 .library-card__container__get-card p {
   text-align: end;
-  width: 356px;
+  width: 456px;
   color: #000;
   text-align: right;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 0.4px;
 }
-.library-card__container__get-card div button {
+.library-card__container__get-card button {
   width: 75px;
   height: 30px;
-  padding: 10px 0px;
+  margin-left: 20px;
+  padding: auto;
   background: #fff;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
