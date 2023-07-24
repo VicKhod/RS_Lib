@@ -385,7 +385,7 @@ img {
 }
 
 .coffee-shop__container__col {
-  @include mixin-display-flex-col(space-between, flex-end);
+  @include mixin-display-flex-col(space-between, _);
   gap: 40px;
   width: 438px;
 }
@@ -399,16 +399,16 @@ img {
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
+}
 
-  .title-left {
-    text-align: left;
-    margin: 0 auto;
-  }
+.title-left {
+  text-align: start;
+  margin: 0;
+}
 
-  .title-right {
-    text-align: right;
-    margin: 0 auto;
-  }
+.title-right {
+  text-align: end;
+  margin: 0;
 }
 
 .coffee-shop__container__col__item {
@@ -423,13 +423,20 @@ img {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
 
   .cost {
     font-family: Forum;
+  }
+}
+
+.right {
+  .coffee-shop__container__col__item {
+    justify-items: end;
   }
 }
 

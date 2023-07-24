@@ -412,7 +412,7 @@ img {
 
 .coffee-shop__container__col {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: _;
   gap: 40px;
   width: 438px;
 }
@@ -427,13 +427,15 @@ img {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-.coffee-shop__container__col__title .title-left {
-  text-align: left;
-  margin: 0 auto;
+
+.title-left {
+  text-align: start;
+  margin: 0;
 }
-.coffee-shop__container__col__title .title-right {
-  text-align: right;
-  margin: 0 auto;
+
+.title-right {
+  text-align: end;
+  margin: 0;
 }
 
 .coffee-shop__container__col__item {
@@ -448,12 +450,17 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 .coffee-shop__container__col__item .cost {
   font-family: Forum;
+}
+
+.right .coffee-shop__container__col__item {
+  justify-items: end;
 }
 
 .coffee-shop__container__col__line {
