@@ -70,7 +70,11 @@ h2 {
   text-align: center;
 }
 
-hr:not(.favorites__item__line, .coffee-shop__container__col__line) {
+hr:not(
+    .favorites__item__line,
+    .coffee-shop__container__col__line,
+    .footer__line
+  ) {
   width: 50px;
   border: 1px solid #0c0c0e;
   margin: 20px auto 40px;
@@ -629,4 +633,75 @@ img {
 
 .personal-card {
   display: none;
+}
+
+footer {
+  @include mixin-display-flex-col(space-between, space-evenly);
+  padding: 20px 20px 44px;
+  height: 250px;
+  background: #000;
+  color: #fff;
+
+  hr {
+    width: 1400px;
+    height: 1px;
+    background: #fff;
+    margin: 30px 0 44px;
+  }
+
+  p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.footer__wrapper {
+  @include mixin-display-flex-col(space-between, flex-start);
+  gap: 10px;
+
+  :last-child {
+    text-align: right;
+  }
+}
+
+.footer__top {
+  @include mixin-display-flex-row(space-between, flex-start);
+  gap: 18px;
+  width: 100%;
+}
+
+.footer__middle {
+  @include mixin-display-flex-row(space-between, flex-end);
+  width: 100%;
+}
+
+.footer__socials {
+  @include mixin-display-flex-row(space-between, flex-start);
+  width: 102px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer__credits {
+  @include mixin-display-flex-row(space-between, center);
+
+  p {
+    // height: 22px;
+    flex-shrink: 0;
+    color: #fff;
+    white-space: nowrap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 2px;
+  }
 }

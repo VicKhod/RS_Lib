@@ -1,9 +1,9 @@
-.card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -29,12 +29,12 @@ p {
   padding: 0;
 }
 
-.card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -120,7 +120,9 @@ h2 {
   text-align: center;
 }
 
-hr:not(.favorites__item__line, .coffee-shop__container__col__line) {
+hr:not(.favorites__item__line,
+.coffee-shop__container__col__line,
+.footer__line) {
   width: 50px;
   border: 1px solid #0c0c0e;
   margin: 20px auto 40px;
@@ -650,6 +652,77 @@ img {
 
 .personal-card {
   display: none;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: space-evenly;
+  padding: 20px 20px 44px;
+  height: 250px;
+  background: #000;
+  color: #fff;
+}
+footer hr {
+  width: 1400px;
+  height: 1px;
+  background: #fff;
+  margin: 30px 0 44px;
+}
+footer p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__wrapper {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer__wrapper :last-child {
+  text-align: right;
+}
+
+.footer__top {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  width: 100%;
+}
+
+.footer__middle {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.footer__socials {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 102px;
+}
+.footer__socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__credits {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__credits p {
+  flex-shrink: 0;
+  color: #fff;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
