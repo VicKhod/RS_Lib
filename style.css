@@ -523,6 +523,23 @@ img {
   width: 600px;
   height: 386px;
 }
+.card__wrapper__border button {
+  align-items: flex-end;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background: #fff;
+  padding: 10px 40px;
+  margin: 20px 179px 30px;
+  white-space: nowrap;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
 
 .card__background {
   width: 560px;
@@ -547,6 +564,8 @@ img {
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
+  margin-bottom: 25px;
+  padding: 20px;
   color: #8e8e8e;
   font-family: Forum;
   font-size: 30px;
@@ -554,7 +573,6 @@ img {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.6px;
-  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
