@@ -15,7 +15,7 @@
   transition-timing-function: ease-in-out;
 }
 .navigation a:hover {
-  color: rgb(0, 191, 255);
+  color: #BB945F;
   transform: scale(1.5);
 }
 
@@ -46,7 +46,7 @@ p {
   transition-timing-function: ease-in-out;
 }
 .navigation a:hover {
-  color: rgb(0, 191, 255);
+  color: #BB945F;
   transform: scale(1.5);
 }
 
