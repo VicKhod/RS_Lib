@@ -648,4 +648,8 @@ img {
   text-transform: capitalize;
 }
 
+.personal-card {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
