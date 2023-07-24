@@ -1,9 +1,9 @@
-.library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -29,12 +29,12 @@ p {
   padding: 0;
 }
 
-.library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
 
-.library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -618,6 +618,34 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+}
+
+.card__wrapper__border__profile {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 169px;
+  height: 63px;
+  margin: 15px auto;
+}
+.card__wrapper__border__profile div {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card__wrapper__border__profile img {
+  width: 20px;
+  height: 21px;
+}
+
+.profile__stats {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
