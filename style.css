@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 
-.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text div, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text div, .contacts__container__text, .coffee-shop__container__col, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -34,7 +34,7 @@ p {
   flex-direction: row;
 }
 
-.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text div, .contacts__container__text, .coffee-shop__container__col, .favorites__item, .favorites__items aside, .about, body {
+.footer__wrapper, footer, .card__wrapper__border__profile div, .library-card__container__get-card, .card__wrapper, .contacts__container__text div, .contacts__container__text, .coffee-shop__container__col, .favorites__items aside, .about, body {
   display: flex;
   flex-direction: column;
 }
@@ -318,8 +318,8 @@ img {
 }
 
 .favorites__item {
-  justify-content: space-evenly;
-  align-items: flex-start;
+  display: grid;
+  grid-area: auto;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -332,13 +332,14 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 37px;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
 .favorites__item .favorites__item__line {
   width: 60px;
-  border: 1px solid #bb945f;
+  height: 1px;
+  background: #bb945f;
   margin: 0 0 20px;
 }
 .favorites__item .favorites__item__title {
@@ -376,8 +377,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item button {
-  width: 75px;
-  height: 30px;
+  padding: 9px 25px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background: none;
@@ -389,19 +389,14 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  padding: 9px 27px;
+}
+.favorites__item .another-btn {
+  border: 1px solid #bb945f;
+  color: #bb945f;
 }
 .favorites__item img {
   width: 200px;
   height: 300px;
-  z-index: 2;
-  position: relative;
-  left: 369px;
-  top: -288px;
-}
-
-.variants-of-favorite {
-  display: none;
 }
 
 .coffee-shop__text {

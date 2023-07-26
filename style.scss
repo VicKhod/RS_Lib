@@ -283,7 +283,9 @@ img {
 }
 
 .favorites__item {
-  @include mixin-display-flex-col(space-evenly, flex-start);
+  // @include mixin-display-flex-col(flex-start, flex-start);
+  display: grid;
+  grid-area: auto;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -296,7 +298,7 @@ img {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 37px;
     letter-spacing: 2px;
     text-transform: capitalize;
     @extend %extend-margin-padding-none;
@@ -304,7 +306,8 @@ img {
 
   .favorites__item__line {
     width: 60px;
-    border: 1px solid #bb945f;
+    height: 1px;
+    background: #bb945f;
     margin: 0 0 20px;
   }
 
@@ -346,8 +349,7 @@ img {
   }
 
   button {
-    width: 75px;
-    height: 30px;
+    padding: 9px 25px;
     border-radius: 2px;
     border: 1px solid #0c0c0e;
     background: none;
@@ -359,21 +361,25 @@ img {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1px;
-    padding: 9px 27px;
+  }
+
+  .another-btn {
+    border: 1px solid #bb945f;
+    color: #bb945f;
   }
 
   img {
     width: 200px;
     height: 300px;
-    z-index: 2;
-    position: relative;
-    left: 369px;
-    top: -288px;
+    // z-index: 2;
+    // position: absolute;
+    // left: 369px;
+    // top: -288px;
   }
 }
 
 .variants-of-favorite {
-  display: none;
+  // display: none;
 }
 
 .coffee-shop__text {
