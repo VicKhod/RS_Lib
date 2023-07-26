@@ -157,6 +157,15 @@ header {
   align-items: center;
   gap: 30px;
 }
+.navigation a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+}
+
 .welcome {
   justify-content: flex-start;
   align-items: center;
@@ -188,6 +197,9 @@ header {
   justify-content: center;
   align-items: center;
   height: 837px;
+}
+.about h2 {
+  padding-top: 5px;
 }
 .about p {
   color: #000;
@@ -242,7 +254,7 @@ img {
 }
 
 .favorites {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -265,24 +277,24 @@ img {
 .seasons__elem input[type=radio] {
   cursor: pointer;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #ffffff;
-  border: 3px solid #ffffff;
+  border: 1px solid #ffffff;
   box-shadow: 0 0 0 2px #000000;
-  transform: translateY(3px);
+  transform: translateY(-1px);
 }
 .seasons__elem input[type=radio]:checked {
   box-shadow: 0 0 0 2px #000000;
   background-color: #000000;
-  border-width: 4px;
+  border-width: 2.5px;
 }
 .seasons__elem .seasons__elem__bold {
   font-weight: 700;
 }
 .seasons__elem label {
-  margin-left: 19px;
+  margin-left: 13px;
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -399,9 +411,8 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
-  text-transform: capitalize;
   margin: 40px 0;
 }
 
@@ -471,13 +482,13 @@ img {
 
 .contacts__container {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contacts__container__text {
   justify-content: space-between;
   align-items: flex-start;
-  height: 414px;
+  height: 375px;
 }
 .contacts__container__text div {
   justify-content: space-between;
@@ -510,7 +521,7 @@ img {
 
 .library-card__container {
   justify-content: space-between;
-  align-items: none;
+  align-items: flex-start;
 }
 
 .card__wrapper {
@@ -529,20 +540,22 @@ img {
 }
 
 .card__wrapper__border {
-  margin-top: 30px;
-  padding: 20px 20px 94px;
+  margin-top: 26px;
+  padding: 18px 18px 94px;
   border: 3px solid #bb945f;
   background: #fff;
   width: 600px;
   height: 386px;
 }
 .card__wrapper__border button {
+  width: 242px;
+  height: 44px;
   align-items: flex-end;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background: #fff;
   padding: 10px 40px;
-  margin: 20px 179px 30px;
+  margin: 20px 158px 30px;
   white-space: nowrap;
   color: #0c0c0e;
   text-align: center;
@@ -618,8 +631,7 @@ img {
 .library-card__container__get-card button {
   width: 75px;
   height: 30px;
-  margin-left: 20px;
-  padding: auto;
+  margin-left: 16px;
   background: #fff;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
