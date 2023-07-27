@@ -579,7 +579,7 @@ img {
   background: #bb945f;
   padding: 20px 20px 25px;
 }
-.card__background p {
+.card__background label {
   color: #000;
   font-family: Forum;
   font-size: 30px;
