@@ -8,15 +8,15 @@
   flex-direction: column;
 }
 
-.navigation a {
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
+  transition-delay: 25ms;
+  transition-timing-function: ease-out;
 }
-.navigation a:hover {
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
   color: #BB945F;
-  transform: scale(1.5);
+  border-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {
@@ -39,15 +39,15 @@ p {
   flex-direction: column;
 }
 
-.navigation a {
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
+  transition-delay: 25ms;
+  transition-timing-function: ease-out;
 }
-.navigation a:hover {
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
   color: #BB945F;
-  transform: scale(1.5);
+  border-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {
@@ -232,7 +232,6 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  gap: 2px;
 }
 .about__carousel a {
   height: 26px;
@@ -377,6 +376,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item button {
+  cursor: pointer;
   padding: 9px 25px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
@@ -502,6 +502,16 @@ img {
 }
 .contacts__container__text p strong {
   font-weight: 700;
+}
+.contacts__container__text p a {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 .contacts__container__map {

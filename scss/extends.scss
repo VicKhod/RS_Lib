@@ -11,12 +11,12 @@
 %extend-hover-link {
   transition-duration: 500ms;
   transition-property: all;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
+  transition-delay: 25ms;
+  transition-timing-function: ease-out;
 
   &:hover {
     color: #BB945F;
-    transform: scale(1.5);
+    border-color: #BB945F;
   }
 }
 

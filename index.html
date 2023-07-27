@@ -156,10 +156,11 @@
                   <p class="favorites__item__title">The Last Queen</p>
                   <p>By Clive Irving</p>
                   <div>
-                    <article>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.
+                    <article>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the
+                      Windsors have evolved and thrived as the modern world has changed around them.
                     </article>
                   </div>
-                  <button class="another-btn">Own</button>
+                  <button class="another-btn" disabled>Own</button>
                   <div>
                     <img src="assets/images/favorites-section-pics/last-queen.jpeg" alt="book-cover">
                   </div>
@@ -169,7 +170,7 @@
             </div>
           </div>
         </section>
-
+        <!-- hidden sections variants-of-favorite-->
         <section class="favorites__variants variants-of-favorite">
           <div class="seasons variants-of-favorite">
             <div class="seasons__elem">
@@ -533,25 +534,28 @@
               </p>
               <div>
                 <p>
-                  Please call (617) 730-2370
+                  Please call <a href="tel:(617) 730-2370">(617) 730-2370</a>
                 </p>
                 <p>
-                  For TTY service, please call (617) 730-2370
+                  For TTY service, please call <a href="tel:(617) 730-2370">(617) 730-2370</a>
                 </p>
                 <p>
-                  Putterham Library: (617) 730-2385
+                  Putterham Library: <a href="tel:(617) 730-2385">(617) 730-2385</a>
                 </p>
               </div>
               <div>
                 <p>
-                <strong>Senior Staff</strong>
-              </p>
-              <p>
-                Library Director: <strong>Amanda Hirst</strong>
-              </p>
+                  <strong>Senior Staff</strong>
+                </p>
+                <p>
+                  Library Director: 
+                  <strong>
+                    <a href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a>
+                  </strong>
+                </p>
               </div>
             </div>
-            <div class="contacts__container__map">
+            <div class="contacts__container__map" id="map">
               <img src="assets/images/map.png" alt="map">
             </div>
           </div>
@@ -634,9 +638,9 @@
       <footer>
         <div class="footer__wrapper">
           <div class="footer__top">
-            <p>
+            <a href="#map">
               286 Cadman Plaza, New York,<br> NY 11238, United States
-            </p>
+            </a>
             <p>
               Mon - Fri <br>
               08:00 am - 07:00 pm
@@ -644,19 +648,29 @@
           </div>
           <div class="footer__middle">
             <div class="footer__socials">
-              <img src="assets/images/icons/u-twitter-alt.svg" alt="twitter">
-              <img src="assets/images/icons/u-instagram.svg" alt="instagram">
-              <img src="assets/images/icons/u-facebook-f.svg" alt="facebook">
+              <a href="https://twitter.com/">
+                <img src="assets/images/icons/u-twitter-alt.svg" alt="twitter">
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="assets/images/icons/u-instagram.svg" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/">
+                <img src="assets/images/icons/u-facebook-f.svg" alt="facebook">
+              </a>
             </div>
-            <p>Sat - Sun <br>
-              10:00 am - 06:00 pm</p>
+            <p>
+              Sat - Sun <br>
+              10:00 am - 06:00 pm
+            </p>
           </div>
         </div>
         <hr class="footer__line">
         <div class="footer__credits">
           <p>2023</p>
-          <p>The Rolling Scopes School</p>
-          <p>VicKhod</p>
+          <a href="https://rs.school/js-stage0/"><p>The Rolling Scopes School</p></a>
+          <a href="https://github.com/VicKhod">
+            <p>VicKhod</p>
+          </a>
         </div>
       </footer>
     </div>
