@@ -273,6 +273,9 @@ img {
   margin: 40px 0;
 }
 
+.seasons__elem {
+  cursor: pointer;
+}
 .seasons__elem input[type=radio] {
   cursor: pointer;
   appearance: none;
