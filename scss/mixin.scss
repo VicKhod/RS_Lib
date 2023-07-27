@@ -1,0 +1,16 @@
+@import "./extends.scss";
+
+@mixin mixin-display-flex-row ($space, $align) {
+  justify-content: $space;
+  align-items: $align;
+
+  @extend %extend-display-flex-row
+};
+
+@mixin mixin-display-flex-col ($space, $align) {
+  justify-content: $space;
+  align-items: $align;
+
+  @extend %extend-display-flex-col
+};
+

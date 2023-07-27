@@ -1,0 +1,30 @@
+%extend-display-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%extend-display-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+%extend-hover-link {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 25ms;
+  transition-timing-function: ease-out;
+
+  &:hover {
+    color: #BB945F;
+    border-color: #BB945F;
+  }
+}
+
+%extend-padding-20 {
+  padding: 20px 20px 40px;
+}
+
+%extend-margin-padding-none {
+  margin: 0;
+  padding: 0;
+}
