@@ -236,7 +236,7 @@ img {
 
 .seasons__elem {
   cursor: pointer;
-  
+
   input[type="radio"] {
     cursor: pointer;
     appearance: none;
@@ -284,16 +284,18 @@ img {
 }
 
 .favorites__item {
-  // @include mixin-display-flex-col(flex-start, flex-start);
   display: grid;
-  grid-area: auto;
+  grid-template-columns: 20px 355px auto;
+  grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
+  justify-items: stretch;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
   background: #fff;
-  padding: 15px 20px;
+  // padding: 15px 20px;
 
   h6 {
+    grid-area: 2 / 2 / 3/ 3;
     color: #000;
     font-family: Forum;
     font-size: 20px;
@@ -306,6 +308,7 @@ img {
   }
 
   .favorites__item__line {
+    grid-area: 3 / 2 / 3 / 3;
     width: 60px;
     height: 1px;
     background: #bb945f;
@@ -313,6 +316,7 @@ img {
   }
 
   .favorites__item__title {
+    grid-area: 3 / 2 / 4/ 3;
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -324,6 +328,7 @@ img {
   }
 
   p {
+    grid-area: 4/ 2 / 5 / 3;
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -333,7 +338,9 @@ img {
     letter-spacing: 2px;
     text-transform: capitalize;
   }
+
   div {
+    grid-area: 5 / 2 / 6/ 3;
     margin: 20px 0 15px;
     width: 355px;
   }
@@ -350,6 +357,7 @@ img {
   }
 
   button {
+    grid-area: 6 / 2 / 7/ 3;
     @extend %extend-hover-btn;
     cursor: pointer;
     padding: 9px 25px;
@@ -372,12 +380,9 @@ img {
   }
 
   img {
+    grid-area: -1 / -1 / -4/ -2;
     width: 200px;
     height: 300px;
-    // z-index: 2;
-    // position: absolute;
-    // left: 369px;
-    // top: -288px;
   }
 }
 

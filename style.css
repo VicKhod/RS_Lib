@@ -345,14 +345,16 @@ img {
 
 .favorites__item {
   display: grid;
-  grid-area: auto;
+  grid-template-columns: 20px 355px auto;
+  grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
+  justify-items: stretch;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
   background: #fff;
-  padding: 15px 20px;
 }
 .favorites__item h6 {
+  grid-area: 2/2/3/3;
   color: #000;
   font-family: Forum;
   font-size: 20px;
@@ -363,12 +365,14 @@ img {
   text-transform: capitalize;
 }
 .favorites__item .favorites__item__line {
+  grid-area: 3/2/3/3;
   width: 60px;
   height: 1px;
   background: #bb945f;
   margin: 0 0 20px;
 }
 .favorites__item .favorites__item__title {
+  grid-area: 3/2/4/3;
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -379,6 +383,7 @@ img {
   text-transform: uppercase;
 }
 .favorites__item p {
+  grid-area: 4/2/5/3;
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -389,6 +394,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item div {
+  grid-area: 5/2/6/3;
   margin: 20px 0 15px;
   width: 355px;
 }
@@ -403,6 +409,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item button {
+  grid-area: 6/2/7/3;
   cursor: pointer;
   padding: 9px 25px;
   border-radius: 2px;
@@ -422,6 +429,7 @@ img {
   color: #bb945f;
 }
 .favorites__item img {
+  grid-area: -1/-1/-4/-2;
   width: 200px;
   height: 300px;
 }
