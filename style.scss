@@ -286,7 +286,7 @@ img {
 .favorites__item {
   display: grid;
   grid-template-columns: 12px 355px auto;
-  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  grid-template-rows: 15px 40px 45px 40px 20px auto 30px 15px;
   justify-items: start;
   column-gap: 10px;
   width: 550px;
@@ -342,9 +342,9 @@ img {
   }
 
   div {
-    grid-area: 5 / 2 / 6/ 3;
-    align-self: last baseline;
-    margin: 20px 0 15px;
+    grid-area: 6 / 2 / 7/ 3;
+    align-self: self-start;
+    margin: 13px 0 15px;
     width: 355px;
   }
 
@@ -360,7 +360,7 @@ img {
   }
 
   button {
-    grid-area: 6 / 2 / 7/ 3;
+    grid-area: 7 / 2 / 8/ 3;
     @extend %extend-hover-btn;
     cursor: pointer;
     padding: 9px 25px;
