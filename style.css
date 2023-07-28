@@ -637,10 +637,9 @@ img {
 .card__background input {
   width: 520px;
   height: 66px;
-  flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
-  margin-bottom: 25px;
+  margin: 14.5px 0;
   padding: 20px;
   color: #8e8e8e;
   font-family: Forum;
