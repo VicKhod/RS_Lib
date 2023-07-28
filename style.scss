@@ -190,7 +190,10 @@ img {
 }
 
 .about__carousel {
-  @include mixin-display-flex-row(center, center);
+  @include mixin-display-flex-row(flex-end, center);
+  width: 68px;
+  height: 16px;
+  gap: 9px;
   margin-top: 40px;
 
   a {

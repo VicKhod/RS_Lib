@@ -254,8 +254,11 @@ img {
 }
 
 .about__carousel {
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  width: 68px;
+  height: 16px;
+  gap: 9px;
   margin-top: 40px;
 }
 .about__carousel a {
