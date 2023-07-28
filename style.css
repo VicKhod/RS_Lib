@@ -347,7 +347,6 @@ img {
   display: grid;
   grid-template-columns: 20px 355px auto;
   grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
-  justify-items: stretch;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -381,6 +380,7 @@ img {
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .favorites__item p {
   grid-area: 4/2/5/3;
@@ -392,6 +392,7 @@ img {
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 .favorites__item div {
   grid-area: 5/2/6/3;

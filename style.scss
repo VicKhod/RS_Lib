@@ -287,12 +287,10 @@ img {
   display: grid;
   grid-template-columns: 20px 355px auto;
   grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
-  justify-items: stretch;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
   background: #fff;
-  // padding: 15px 20px;
 
   h6 {
     grid-area: 2 / 2 / 3/ 3;
@@ -325,6 +323,7 @@ img {
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   p {
@@ -337,6 +336,7 @@ img {
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
 
   div {
