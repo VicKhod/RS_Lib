@@ -8,15 +8,27 @@
   flex-direction: column;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
+.navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
+.navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+}
+
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+  color: #0C0C0E;
+  border: none;
+  background-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {
@@ -39,15 +51,27 @@ p {
   flex-direction: column;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
+.navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
+.navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+}
+
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+  color: #0C0C0E;
+  border: none;
+  background-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {

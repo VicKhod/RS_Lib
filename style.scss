@@ -350,7 +350,7 @@ img {
   }
 
   button {
-    @extend %extend-hover-link;
+    @extend %extend-hover-btn;
     cursor: pointer;
     padding: 9px 25px;
     border-radius: 2px;
@@ -541,7 +541,7 @@ img {
   height: 386px;
 
   button {
-    @extend %extend-hover-link;
+    @extend %extend-hover-btn;
     width: 242px;
     height: 44px;
     align-items: flex-end;
@@ -627,7 +627,7 @@ img {
   }
 
   button {
-    @extend %extend-hover-link;
+    @extend %extend-hover-btn;
     width: 75px;
     height: 30px;
     margin-left: 16px;
