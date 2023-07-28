@@ -235,6 +235,8 @@ img {
 }
 
 .seasons__elem {
+  cursor: pointer;
+
   input[type="radio"] {
     cursor: pointer;
     appearance: none;
@@ -282,16 +284,18 @@ img {
 }
 
 .favorites__item {
-  // @include mixin-display-flex-col(flex-start, flex-start);
   display: grid;
-  grid-area: auto;
+  grid-template-columns: 12px 355px auto;
+  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  justify-items: start;
+  column-gap: 10px;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
   background: #fff;
-  padding: 15px 20px;
 
   h6 {
+    grid-area: 2 / 2 / 3/ 3;
     color: #000;
     font-family: Forum;
     font-size: 20px;
@@ -304,6 +308,7 @@ img {
   }
 
   .favorites__item__line {
+    grid-area: 3 / 2 / 3 / 3;
     width: 60px;
     height: 1px;
     background: #bb945f;
@@ -311,27 +316,34 @@ img {
   }
 
   .favorites__item__title {
+    grid-area: 3 / 2 / 4/ 3;
+    align-self: last baseline;
     color: #000;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   p {
+    grid-area: 4/ 2 / 5 / 3;
+    align-self: last baseline;
     color: #000;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
+    white-space: nowrap;
   }
+
   div {
+    grid-area: 5 / 2 / 6/ 3;
+    align-self: last baseline;
     margin: 20px 0 15px;
     width: 355px;
   }
@@ -348,7 +360,8 @@ img {
   }
 
   button {
-    @extend %extend-hover-link;
+    grid-area: 6 / 2 / 7/ 3;
+    @extend %extend-hover-btn;
     cursor: pointer;
     padding: 9px 25px;
     border-radius: 2px;
@@ -362,6 +375,7 @@ img {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1px;
+    justify-self: start;
   }
 
   .another-btn {
@@ -370,17 +384,15 @@ img {
   }
 
   img {
+    grid-area: -1 / -1 / -4/ -2;
     width: 200px;
     height: 300px;
-    // z-index: 2;
-    // position: absolute;
-    // left: 369px;
-    // top: -288px;
+    align-self: last baseline;
   }
 }
 
 .variants-of-favorite {
-  // display: none;
+  display: none;
 }
 
 .coffee-shop__text {
@@ -539,7 +551,7 @@ img {
   height: 386px;
 
   button {
-    @extend %extend-hover-link;
+    @extend %extend-hover-btn;
     width: 242px;
     height: 44px;
     align-items: flex-end;
@@ -567,7 +579,7 @@ img {
   background: #bb945f;
   padding: 20px 20px 25px;
 
-  p {
+  label {
     color: #000;
     font-family: Forum;
     font-size: 30px;
@@ -625,7 +637,7 @@ img {
   }
 
   button {
-    @extend %extend-hover-link;
+    @extend %extend-hover-btn;
     width: 75px;
     height: 30px;
     margin-left: 16px;

@@ -20,6 +20,19 @@
   }
 }
 
+%extend-hover-btn {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: #0C0C0E;
+    border: none;
+    background-color: #BB945F;
+  }
+}
+
 %extend-padding-20 {
   padding: 20px 20px 40px;
 }

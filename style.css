@@ -8,15 +8,27 @@
   flex-direction: column;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
+.navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
+.navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+}
+
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+  color: #0C0C0E;
+  border: none;
+  background-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {
@@ -39,15 +51,27 @@ p {
   flex-direction: column;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button, .navigation a {
+.navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover, .navigation a:hover {
+.navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+}
+
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+  color: #0C0C0E;
+  border: none;
+  background-color: #BB945F;
 }
 
 section:not(.welcome, .favorites__item) {
@@ -273,6 +297,9 @@ img {
   margin: 40px 0;
 }
 
+.seasons__elem {
+  cursor: pointer;
+}
 .seasons__elem input[type=radio] {
   cursor: pointer;
   appearance: none;
@@ -318,14 +345,17 @@ img {
 
 .favorites__item {
   display: grid;
-  grid-area: auto;
+  grid-template-columns: 12px 355px auto;
+  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  justify-items: start;
+  column-gap: 10px;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
   background: #fff;
-  padding: 15px 20px;
 }
 .favorites__item h6 {
+  grid-area: 2/2/3/3;
   color: #000;
   font-family: Forum;
   font-size: 20px;
@@ -336,32 +366,39 @@ img {
   text-transform: capitalize;
 }
 .favorites__item .favorites__item__line {
+  grid-area: 3/2/3/3;
   width: 60px;
   height: 1px;
   background: #bb945f;
   margin: 0 0 20px;
 }
 .favorites__item .favorites__item__title {
+  grid-area: 3/2/4/3;
+  align-self: last baseline;
   color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .favorites__item p {
+  grid-area: 4/2/5/3;
+  align-self: last baseline;
   color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 .favorites__item div {
+  grid-area: 5/2/6/3;
+  align-self: last baseline;
   margin: 20px 0 15px;
   width: 355px;
 }
@@ -376,6 +413,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item button {
+  grid-area: 6/2/7/3;
   cursor: pointer;
   padding: 9px 25px;
   border-radius: 2px;
@@ -389,14 +427,21 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+  justify-self: start;
 }
 .favorites__item .another-btn {
   border: 1px solid #bb945f;
   color: #bb945f;
 }
 .favorites__item img {
+  grid-area: -1/-1/-4/-2;
   width: 200px;
   height: 300px;
+  align-self: last baseline;
+}
+
+.variants-of-favorite {
+  display: none;
 }
 
 .coffee-shop__text {
@@ -579,7 +624,7 @@ img {
   background: #bb945f;
   padding: 20px 20px 25px;
 }
-.card__background p {
+.card__background label {
   color: #000;
   font-family: Forum;
   font-size: 30px;
