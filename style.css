@@ -345,9 +345,10 @@ img {
 
 .favorites__item {
   display: grid;
-  grid-template-columns: 20px 355px auto;
-  grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
-  align-items: start;
+  grid-template-columns: 12px 355px auto;
+  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  justify-items: start;
+  column-gap: 10px;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -373,30 +374,31 @@ img {
 }
 .favorites__item .favorites__item__title {
   grid-area: 3/2/4/3;
+  align-self: last baseline;
   color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
   white-space: nowrap;
 }
 .favorites__item p {
   grid-area: 4/2/5/3;
+  align-self: last baseline;
   color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   white-space: nowrap;
 }
 .favorites__item div {
   grid-area: 5/2/6/3;
+  align-self: last baseline;
   margin: 20px 0 15px;
   width: 355px;
 }
