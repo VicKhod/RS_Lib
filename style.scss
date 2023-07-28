@@ -287,6 +287,7 @@ img {
   display: grid;
   grid-template-columns: 20px 355px auto;
   grid-template-rows: 15px 40px 40px 40px auto 30px 15px;
+  align-items: start;
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -372,6 +373,7 @@ img {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1px;
+    justify-self: start;
   }
 
   .another-btn {
@@ -383,11 +385,12 @@ img {
     grid-area: -1 / -1 / -4/ -2;
     width: 200px;
     height: 300px;
+    align-self: last baseline;
   }
 }
 
 .variants-of-favorite {
-  // display: none;
+  display: none;
 }
 
 .coffee-shop__text {
