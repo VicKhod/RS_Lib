@@ -120,7 +120,7 @@ header {
 }
 
 .welcome {
-  @include mixin-display-flex-row(flex-start, center);
+  @include mixin-display-flex-row(flex-start, flex-start);
   height: 600px;
   background: linear-gradient(
       180deg,
@@ -138,6 +138,7 @@ header {
   width: 600px;
   height: 220px;
   padding: 35px 40px;
+  margin-top: 220px;
 
   p {
     width: 520px;
