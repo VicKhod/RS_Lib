@@ -8,15 +8,16 @@
   flex-direction: column;
 }
 
-.navigation a {
+.footer__credits a p, footer a, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.navigation a:hover {
+.footer__credits a p:hover, footer a:hover, .navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+  font-weight: 700;
 }
 
 .library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
@@ -31,11 +32,12 @@
   background-color: #BB945F;
 }
 
-section:not(.welcome, .favorites__item) {
+.var-sec, section {
   padding: 20px 20px 40px;
 }
 
 .favorites__item h6, h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -51,15 +53,16 @@ p {
   flex-direction: column;
 }
 
-.navigation a {
+.footer__credits a p, footer a, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.navigation a:hover {
+.footer__credits a p:hover, footer a:hover, .navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
+  font-weight: 700;
 }
 
 .library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
@@ -74,11 +77,12 @@ p {
   background-color: #BB945F;
 }
 
-section:not(.welcome, .favorites__item) {
+.var-sec, section {
   padding: 20px 20px 40px;
 }
 
 .favorites__item h6, h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -192,7 +196,7 @@ header {
 
 .welcome {
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   height: 600px;
   background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 40%), url(assets/images/85c1859f825ed82614b2036bc8be037f.png), center, no-repeat;
   background-position: 100%;
@@ -204,8 +208,9 @@ header {
   width: 600px;
   height: 220px;
   padding: 35px 40px;
+  margin-top: 220px;
 }
-.welcome__text p {
+.welcome__text h3 {
   width: 520px;
   color: #fff;
   text-align: center;
@@ -253,8 +258,11 @@ img {
 }
 
 .about__carousel {
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  width: 68px;
+  height: 16px;
+  gap: 9px;
   margin-top: 40px;
 }
 .about__carousel a {
@@ -346,7 +354,7 @@ img {
 .favorites__item {
   display: grid;
   grid-template-columns: 12px 355px auto;
-  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  grid-template-rows: 15px 40px 45px 40px 20px auto 30px 15px;
   justify-items: start;
   column-gap: 10px;
   width: 550px;
@@ -384,7 +392,7 @@ img {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.favorites__item p {
+.favorites__item .favorites__item__author {
   grid-area: 4/2/5/3;
   align-self: last baseline;
   color: #000;
@@ -397,12 +405,12 @@ img {
   white-space: nowrap;
 }
 .favorites__item div {
-  grid-area: 5/2/6/3;
-  align-self: last baseline;
-  margin: 20px 0 15px;
+  grid-area: 6/2/7/3;
+  align-self: self-start;
+  margin: 13px 0 15px;
   width: 355px;
 }
-.favorites__item article {
+.favorites__item .favorites__item__article {
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -413,7 +421,7 @@ img {
   text-transform: capitalize;
 }
 .favorites__item button {
-  grid-area: 6/2/7/3;
+  grid-area: 7/2/8/3;
   cursor: pointer;
   padding: 9px 25px;
   border-radius: 2px;
@@ -637,10 +645,9 @@ img {
 .card__background input {
   width: 520px;
   height: 66px;
-  flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
-  margin-bottom: 25px;
+  margin: 14.5px 0;
   padding: 20px;
   color: #8e8e8e;
   font-family: Forum;
@@ -654,7 +661,7 @@ img {
 .library-card__container__get-card {
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 35px;
+  gap: 33px;
 }
 .library-card__container__get-card .get-card__title {
   text-align: end;
@@ -749,7 +756,6 @@ footer p {
   font-weight: 400;
   line-height: 20px;
 }
-
 .footer__wrapper {
   justify-content: space-between;
   align-items: flex-start;
@@ -764,6 +770,14 @@ footer p {
   align-items: flex-start;
   gap: 18px;
   width: 100%;
+}
+.footer__top a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .footer__middle {

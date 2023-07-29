@@ -40,7 +40,7 @@ body {
   background-color: #fff;
 }
 
-section:not(.welcome, .favorites__item) {
+section {
   @extend %extend-padding-20;
 }
 
@@ -54,6 +54,7 @@ li {
 }
 
 h2,
+h3,
 p {
   @extend %extend-margin-padding-none;
 }
@@ -120,7 +121,7 @@ header {
 }
 
 .welcome {
-  @include mixin-display-flex-row(flex-start, center);
+  @include mixin-display-flex-row(flex-start, flex-start);
   height: 600px;
   background: linear-gradient(
       180deg,
@@ -138,8 +139,9 @@ header {
   width: 600px;
   height: 220px;
   padding: 35px 40px;
+  margin-top: 220px;
 
-  p {
+  h3 {
     width: 520px;
     color: #fff;
     text-align: center;
@@ -189,7 +191,10 @@ img {
 }
 
 .about__carousel {
-  @include mixin-display-flex-row(center, center);
+  @include mixin-display-flex-row(flex-end, center);
+  width: 68px;
+  height: 16px;
+  gap: 9px;
   margin-top: 40px;
 
   a {
@@ -286,7 +291,7 @@ img {
 .favorites__item {
   display: grid;
   grid-template-columns: 12px 355px auto;
-  grid-template-rows: 15px 40px 45px 45px auto 30px 15px;
+  grid-template-rows: 15px 40px 45px 40px 20px auto 30px 15px;
   justify-items: start;
   column-gap: 10px;
   width: 550px;
@@ -328,7 +333,7 @@ img {
     white-space: nowrap;
   }
 
-  p {
+  .favorites__item__author {
     grid-area: 4/ 2 / 5 / 3;
     align-self: last baseline;
     color: #000;
@@ -342,13 +347,13 @@ img {
   }
 
   div {
-    grid-area: 5 / 2 / 6/ 3;
-    align-self: last baseline;
-    margin: 20px 0 15px;
+    grid-area: 6 / 2 / 7/ 3;
+    align-self: self-start;
+    margin: 13px 0 15px;
     width: 355px;
   }
 
-  article {
+  .favorites__item__article {
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -360,7 +365,7 @@ img {
   }
 
   button {
-    grid-area: 6 / 2 / 7/ 3;
+    grid-area: 7 / 2 / 8/ 3;
     @extend %extend-hover-btn;
     cursor: pointer;
     padding: 9px 25px;
@@ -391,6 +396,9 @@ img {
   }
 }
 
+.var-sec {
+  @extend %extend-padding-20;
+}
 .variants-of-favorite {
   display: none;
 }
@@ -593,10 +601,9 @@ img {
   input {
     width: 520px;
     height: 66px;
-    flex-shrink: 0;
     border-radius: 10px;
     background: #fff;
-    margin-bottom: 25px;
+    margin: 14.5px 0;
     padding: 20px;
     color: #8e8e8e;
     font-family: Forum;
@@ -610,7 +617,7 @@ img {
 
 .library-card__container__get-card {
   @include mixin-display-flex-col(flex-start, flex-end);
-  gap: 35px;
+  gap: 33px;
 
   .get-card__title {
     text-align: end;
@@ -709,6 +716,10 @@ footer {
     font-weight: 400;
     line-height: 20px;
   }
+
+  a {
+    @extend %extend-hover-link;
+  }
 }
 
 .footer__wrapper {
@@ -724,6 +735,15 @@ footer {
   @include mixin-display-flex-row(space-between, flex-start);
   gap: 18px;
   width: 100%;
+
+  a {
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 .footer__middle {
@@ -743,6 +763,10 @@ footer {
 
 .footer__credits {
   @include mixin-display-flex-row(space-between, center);
+
+  a p {
+    @extend %extend-hover-link;
+  }
 
   p {
     flex-shrink: 0;
