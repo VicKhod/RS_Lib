@@ -19,13 +19,13 @@
   border-color: #BB945F;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button:not(.another-btn) {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover:not(.another-btn) {
   color: #0C0C0E;
   border: none;
   background-color: #BB945F;
@@ -63,13 +63,13 @@ p {
   border-color: #BB945F;
 }
 
-.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button {
+.library-card__container__get-card button, .card__wrapper__border button, .favorites__item button:not(.another-btn) {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover {
+.library-card__container__get-card button:hover, .card__wrapper__border button:hover, .favorites__item button:hover:not(.another-btn) {
   color: #0C0C0E;
   border: none;
   background-color: #BB945F;
@@ -420,7 +420,6 @@ img {
 }
 .favorites__item button {
   grid-area: 7/2/8/3;
-  cursor: pointer;
   padding: 9px 25px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
@@ -434,6 +433,9 @@ img {
   line-height: normal;
   letter-spacing: 1px;
   justify-self: start;
+}
+.favorites__item button:not(.another-btn) {
+  cursor: pointer;
 }
 .favorites__item .another-btn {
   border: 1px solid #bb945f;

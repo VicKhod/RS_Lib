@@ -366,8 +366,6 @@ img {
 
   button {
     grid-area: 7 / 2 / 8/ 3;
-    @extend %extend-hover-btn;
-    cursor: pointer;
     padding: 9px 25px;
     border-radius: 2px;
     border: 1px solid #0c0c0e;
@@ -381,6 +379,11 @@ img {
     line-height: normal;
     letter-spacing: 1px;
     justify-self: start;
+  }
+
+  button:not(.another-btn) {
+    @extend %extend-hover-btn;
+    cursor: pointer;
   }
 
   .another-btn {
