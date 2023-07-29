@@ -31,11 +31,12 @@
   background-color: #BB945F;
 }
 
-section:not(.welcome, .favorites__item) {
+.var-sec, section:not(.welcome, .favorites__item) {
   padding: 20px 20px 40px;
 }
 
 .favorites__item h6, h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -74,11 +75,12 @@ p {
   background-color: #BB945F;
 }
 
-section:not(.welcome, .favorites__item) {
+.var-sec, section:not(.welcome, .favorites__item) {
   padding: 20px 20px 40px;
 }
 
 .favorites__item h6, h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -206,7 +208,7 @@ header {
   padding: 35px 40px;
   margin-top: 220px;
 }
-.welcome__text p {
+.welcome__text h3 {
   width: 520px;
   color: #fff;
   text-align: center;
@@ -388,7 +390,7 @@ img {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.favorites__item p {
+.favorites__item .favorites__item__author {
   grid-area: 4/2/5/3;
   align-self: last baseline;
   color: #000;
@@ -406,7 +408,7 @@ img {
   margin: 13px 0 15px;
   width: 355px;
 }
-.favorites__item article {
+.favorites__item .favorites__item__article {
   color: #000;
   font-family: Inter;
   font-size: 15px;

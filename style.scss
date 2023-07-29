@@ -54,6 +54,7 @@ li {
 }
 
 h2,
+h3,
 p {
   @extend %extend-margin-padding-none;
 }
@@ -140,7 +141,7 @@ header {
   padding: 35px 40px;
   margin-top: 220px;
 
-  p {
+  h3 {
     width: 520px;
     color: #fff;
     text-align: center;
@@ -332,7 +333,7 @@ img {
     white-space: nowrap;
   }
 
-  p {
+  .favorites__item__author {
     grid-area: 4/ 2 / 5 / 3;
     align-self: last baseline;
     color: #000;
@@ -352,7 +353,7 @@ img {
     width: 355px;
   }
 
-  article {
+  .favorites__item__article {
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -395,6 +396,9 @@ img {
   }
 }
 
+.var-sec {
+  @extend %extend-padding-20;
+}
 .variants-of-favorite {
   display: none;
 }
@@ -727,7 +731,7 @@ footer {
   @include mixin-display-flex-row(space-between, flex-start);
   gap: 18px;
   width: 100%;
-  
+
   a {
     color: #fff;
     font-family: Inter;
