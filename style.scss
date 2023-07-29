@@ -40,7 +40,7 @@ body {
   background-color: #fff;
 }
 
-section:not(.welcome) {
+section {
   @extend %extend-padding-20;
 }
 
