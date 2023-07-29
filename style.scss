@@ -716,6 +716,10 @@ footer {
     font-weight: 400;
     line-height: 20px;
   }
+
+  a {
+    @extend %extend-hover-link;
+  }
 }
 
 .footer__wrapper {
@@ -759,6 +763,10 @@ footer {
 
 .footer__credits {
   @include mixin-display-flex-row(space-between, center);
+
+  a p {
+    @extend %extend-hover-link;
+  }
 
   p {
     flex-shrink: 0;
