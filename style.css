@@ -31,7 +31,7 @@
   background-color: #BB945F;
 }
 
-.var-sec, section {
+.var-sec, section:not(.welcome) {
   padding: 20px 20px 40px;
 }
 
@@ -75,7 +75,7 @@ p {
   background-color: #BB945F;
 }
 
-.var-sec, section {
+.var-sec, section:not(.welcome) {
   padding: 20px 20px 40px;
 }
 
