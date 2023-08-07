@@ -120,6 +120,10 @@ header {
   }
 }
 
+.burger-menu {
+  display: none;
+}
+
 .welcome {
   @include mixin-display-flex-row(flex-start, flex-start);
   height: 600px;

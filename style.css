@@ -192,6 +192,10 @@ header {
   line-height: 50px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .welcome {
   justify-content: flex-start;
   align-items: flex-start;
