@@ -4,7 +4,7 @@
   .wrapper {
     max-width: 768px;
   }
-  
+
   .navigation {
     display: none;
   }
@@ -13,7 +13,7 @@
     display: inline-block;
   }
 
-  .favorites__items {
+  .favorites__items, .coffee-shop__container, .contacts__container, .library-card__container {
     @include media-mixin-display-flex-col(center, center);
   }
 }

@@ -8,7 +8,7 @@
   .burger-menu {
     display: inline-block;
   }
-  .favorites__items {
+  .favorites__items, .coffee-shop__container, .contacts__container, .library-card__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
