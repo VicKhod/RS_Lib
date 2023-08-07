@@ -15,7 +15,7 @@
 
   .about {
     height: 862px;
-    
+
     h2 {
       padding-top: 13px;
     }
@@ -36,5 +36,12 @@
   .contacts__container,
   .library-card__container {
     @include media-mixin-display-flex-col(center, center);
+  }
+
+  .favorites__items {
+    gap: 40px;
+  }
+  .favorites__items__left-col {
+    margin-right: 40px;
   }
 }
