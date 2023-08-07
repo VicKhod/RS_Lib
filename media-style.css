@@ -1,3 +1,10 @@
-
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .burger-menu {
+    display: inline-block;
+  }
+}
 
 /*# sourceMappingURL=media-style.css.map */
