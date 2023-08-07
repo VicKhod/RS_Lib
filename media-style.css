@@ -8,6 +8,12 @@
   .burger-menu {
     display: inline-block;
   }
+  .favorites__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=media-style.css.map */

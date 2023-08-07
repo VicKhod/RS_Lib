@@ -1,3 +1,5 @@
+@import "./scss/mixin.scss";
+
 @media (max-width: 768px) {
   .wrapper {
     max-width: 768px;
@@ -9,5 +11,9 @@
 
   .burger-menu {
     display: inline-block;
+  }
+
+  .favorites__items {
+    @include media-mixin-display-flex-col(center, center);
   }
 }

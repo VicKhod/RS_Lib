@@ -14,3 +14,9 @@
   @extend %extend-display-flex-col
 };
 
+@mixin media-mixin-display-flex-col ($space, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $space;
+  align-items: $align;
+};
