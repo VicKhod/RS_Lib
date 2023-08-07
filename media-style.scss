@@ -13,6 +13,14 @@
     display: inline-block;
   }
 
+  .about .second-pic, .third-pic {
+    display: none;
+  }
+
+  .about__arrow {
+    display: inline-block;
+  }
+
   .favorites__items, .coffee-shop__container, .contacts__container, .library-card__container {
     @include media-mixin-display-flex-col(center, center);
   }

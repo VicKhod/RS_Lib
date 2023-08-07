@@ -8,6 +8,12 @@
   .burger-menu {
     display: inline-block;
   }
+  .about .second-pic, .third-pic {
+    display: none;
+  }
+  .about__arrow {
+    display: inline-block;
+  }
   .favorites__items, .coffee-shop__container, .contacts__container, .library-card__container {
     display: flex;
     flex-direction: column;

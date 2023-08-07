@@ -155,6 +155,12 @@ hr:not(.favorites__item__line,
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   justify-content: space-between;
   align-items: center;
@@ -248,15 +254,13 @@ header {
   gap: 25px;
   margin: 20px 0 0;
 }
-.about__pics div {
+.about__pics div:not(.about__arrow) {
   width: 450px;
   height: 560px;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about__arrow {
+  display: none;
 }
 
 .about__carousel {

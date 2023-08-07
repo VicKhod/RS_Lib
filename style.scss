@@ -82,6 +82,12 @@ hr:not(
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 header {
   @include mixin-display-flex-row(space-between, center);
   background: #0c0c0e;
@@ -182,16 +188,14 @@ header {
   gap: 25px;
   margin: 20px 0 0;
 
-  div {
+  div:not(.about__arrow) {
     width: 450px;
     height: 560px;
   }
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about__arrow {
+  display: none;
 }
 
 .about__carousel {
