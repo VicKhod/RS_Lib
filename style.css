@@ -8,13 +8,13 @@
   flex-direction: column;
 }
 
-.footer__credits a p, footer a, .navigation a {
+.footer__credits a p, footer a, .contacts__container__text p a, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.footer__credits a p:hover, footer a:hover, .navigation a:hover {
+.footer__credits a p:hover, footer a:hover, .contacts__container__text p a:hover, .navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
 }
@@ -52,13 +52,13 @@ p {
   flex-direction: column;
 }
 
-.footer__credits a p, footer a, .navigation a {
+.footer__credits a p, footer a, .contacts__container__text p a, .navigation a {
   transition-duration: 500ms;
   transition-property: all;
   transition-delay: 25ms;
   transition-timing-function: ease-out;
 }
-.footer__credits a p:hover, footer a:hover, .navigation a:hover {
+.footer__credits a p:hover, footer a:hover, .contacts__container__text p a:hover, .navigation a:hover {
   color: #BB945F;
   border-color: #BB945F;
 }

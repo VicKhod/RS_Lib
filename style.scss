@@ -521,6 +521,7 @@ header {
     }
 
     a {
+      @extend %extend-hover-link;
       color: #000;
       font-family: Inter;
       font-size: 20px;
