@@ -44,16 +44,17 @@
   }
 
   .coffee-shop__container {
-    @include media-mixin-display-flex-col(center, center);
+    @include media-mixin-display-flex-col(center, flex-start);
     gap: 40px;
-
-    .left {
-      align-self: flex-start;
-    }
 
     .right {
       align-self: flex-end;
     }
+  }
+
+  .coffee-shop__text {
+    width: 728px;
+    height: 200px;
   }
 
   .contacts__container {

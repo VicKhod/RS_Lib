@@ -39,14 +39,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
-  }
-  .coffee-shop__container .left {
-    align-self: flex-start;
   }
   .coffee-shop__container .right {
     align-self: flex-end;
+  }
+  .coffee-shop__text {
+    width: 728px;
+    height: 200px;
   }
   .contacts__container {
     display: flex;
