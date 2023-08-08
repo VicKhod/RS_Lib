@@ -656,11 +656,15 @@ header {
     letter-spacing: 0.4px;
   }
 
+  .get-card__buttons {
+    @include mixin-display-flex-row(center, center);
+    gap: 20px;
+  }
+
   button {
     @extend %extend-hover-btn;
     width: 75px;
     height: 30px;
-    margin-left: 16px;
     background: #fff;
     border-radius: 2px;
     border: 1px solid #0c0c0e;

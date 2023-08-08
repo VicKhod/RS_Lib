@@ -70,9 +70,6 @@
     width: 600px;
     text-align: center;
   }
-  .library-card__container .library-card__container__get-card button {
-    margin-left: 10px;
-  }
   .library-card__container .get-card__title {
     text-align: center;
   }

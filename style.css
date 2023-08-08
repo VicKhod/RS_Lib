@@ -1,4 +1,4 @@
-.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container__get-card .get-card__buttons, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
@@ -42,7 +42,7 @@ p {
   padding: 0;
 }
 
-.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
+.footer__credits, .footer__socials, .footer__middle, .footer__top, .card__wrapper__border__profile, .library-card__container__get-card .get-card__buttons, .library-card__container, .contacts__container, .coffee-shop__container, .favorites__items, .seasons, .about__carousel, .about__pics, .welcome, .navigation ul, .header-menu, header {
   display: flex;
   flex-direction: row;
 }
@@ -694,10 +694,14 @@ header {
   line-height: 40px;
   letter-spacing: 0.4px;
 }
+.library-card__container__get-card .get-card__buttons {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .library-card__container__get-card button {
   width: 75px;
   height: 30px;
-  margin-left: 16px;
   background: #fff;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
