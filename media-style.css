@@ -59,6 +59,29 @@
     align-self: flex-end;
     margin-right: 15px;
   }
+  .library-card__container {
+    gap: 21px;
+  }
+  .library-card__container .library-card__container__get-card {
+    align-items: center;
+    gap: 39px;
+  }
+  .library-card__container .library-card__container__get-card p {
+    width: 600px;
+    text-align: center;
+  }
+  .library-card__container .library-card__container__get-card button {
+    margin-left: 10px;
+  }
+  .library-card__container .get-card__title {
+    text-align: center;
+  }
+  .card__wrapper__border {
+    margin-top: 32px;
+  }
+  .card__wrapper__border button {
+    margin: 18px 159px 30px;
+  }
 }
 
 /*# sourceMappingURL=media-style.css.map */

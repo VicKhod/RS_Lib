@@ -65,4 +65,34 @@
       margin-right: 15px;
     }
   }
+
+  .library-card__container {
+    gap: 21px;
+
+    .library-card__container__get-card {
+      align-items: center;
+      gap: 39px;
+
+      p {
+        width: 600px;
+        text-align: center;
+      }
+
+      button {
+        margin-left: 10px;
+      }
+    }
+
+    .get-card__title {
+      text-align: center;
+    }
+  }
+
+  .card__wrapper__border {
+    margin-top: 32px;
+
+    button {
+      margin: 18px 159px 30px;
+    }
+  }
 }
