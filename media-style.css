@@ -23,7 +23,6 @@
     margin: 43px 23px 0;
   }
   .favorites__items,
-  .coffee-shop__container,
   .contacts__container,
   .library-card__container {
     display: flex;
@@ -36,6 +35,19 @@
   }
   .favorites__items__left-col {
     margin-right: 40px;
+  }
+  .coffee-shop__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: _;
+    gap: 40px;
+  }
+  .coffee-shop__container .left {
+    align-self: flex-start;
+  }
+  .coffee-shop__container .right {
+    align-self: flex-end;
   }
 }
 
