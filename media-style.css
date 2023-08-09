@@ -31,10 +31,14 @@
     align-items: center;
   }
   .favorites__items {
-    gap: 40px;
-  }
-  .favorites__items__left-col {
     margin-right: 40px;
+  }
+  .favorites__items aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
   .coffee-shop__container {
     display: flex;
@@ -47,7 +51,6 @@
     align-self: flex-end;
   }
   .coffee-shop__text {
-    width: 728px;
     height: 200px;
   }
   .contacts__container {

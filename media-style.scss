@@ -31,17 +31,19 @@
       margin: 43px 23px 0;
     }
   }
-  
+
   .favorites__items,
   .library-card__container {
     @include media-mixin-display-flex-col(center, center);
   }
 
   .favorites__items {
-    gap: 40px;
-  }
-  .favorites__items__left-col {
     margin-right: 40px;
+
+    aside {
+      @include media-mixin-display-flex-col(center, center);
+      gap: 40px;
+    }
   }
 
   .coffee-shop__container {
@@ -54,7 +56,6 @@
   }
 
   .coffee-shop__text {
-    width: 728px;
     height: 200px;
   }
 
