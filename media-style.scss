@@ -1,104 +1,5 @@
 @import "./scss/mixin.scss";
 
-@media (max-width: 768px) {
-  .wrapper {
-    max-width: 768px;
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  .burger-menu {
-    display: inline-block;
-  }
-
-  .about {
-    height: 862px;
-
-    .second-pic,
-    .third-pic {
-      display: none;
-    }
-
-    .about__container {
-      height: 601px;
-      gap: 25px;
-    }
-
-    .about__arrow {
-      display: inline-block;
-      margin: 43px 23px 0;
-    }
-  }
-
-  .favorites__items,
-  .library-card__container {
-    @include media-mixin-display-flex-col(center, center);
-  }
-
-  .favorites__items {
-    margin-right: 40px;
-
-    aside {
-      @include media-mixin-display-flex-col(center, center);
-      gap: 40px;
-    }
-  }
-
-  .coffee-shop__container {
-    @include media-mixin-display-flex-col(center, flex-start);
-    gap: 40px;
-
-    .right {
-      align-self: flex-end;
-    }
-  }
-
-  .coffee-shop__text {
-    height: 200px;
-  }
-
-  .contacts__container {
-    @include media-mixin-display-flex-col(center, flex-start);
-    gap: 100px;
-
-    .contacts__container__map {
-      align-self: flex-end;
-      margin-right: 15px;
-    }
-  }
-
-  .coffee-shop__container__col__item {
-    grid-template-columns: 190px 109px 19px;
-  }
-
-  .library-card__container {
-    gap: 21px;
-
-    .library-card__container__get-card {
-      align-items: center;
-      gap: 39px;
-
-      p {
-        text-align: center;
-      }
-    }
-
-    .get-card__title {
-      text-align: center;
-    }
-  }
-
-  .card__wrapper__border {
-    margin-top: 32px;
-
-    button {
-      margin: 18px 159px 30px;
-    }
-  }
-}
-
 @media (max-width: 850px) {
   .wrapper {
     max-width: 850px;
@@ -178,14 +79,22 @@
     .library-card__container__get-card {
       align-items: center;
       gap: 39px;
-
-      p {
-        text-align: center;
-      }
     }
 
     .get-card__title {
       text-align: center;
+    }
+
+    .get-card__text {
+      width: 600px;
+      height: 80px;
+
+      p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
     }
   }
 
