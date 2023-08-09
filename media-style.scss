@@ -16,21 +16,22 @@
   .about {
     height: 862px;
 
-    h2 {
-      padding-top: 13px;
-    }
-
     .second-pic,
     .third-pic {
       display: none;
     }
-  }
 
-  .about__arrow {
-    display: inline-block;
-    margin: 43px 23px 0;
-  }
+    .about__container {
+      height: 601px;
+      gap: 25px;
+    }
 
+    .about__arrow {
+      display: inline-block;
+      margin: 43px 23px 0;
+    }
+  }
+  
   .favorites__items,
   .library-card__container {
     @include media-mixin-display-flex-col(center, center);
