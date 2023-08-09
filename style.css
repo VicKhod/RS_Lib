@@ -511,7 +511,7 @@ header {
 
 .coffee-shop__container__col__item {
   display: grid;
-  grid-template-columns: 197px 100px 21px;
+  grid-template-columns: 193px 105px 20px;
   align-items: center;
   column-gap: 60px;
 }

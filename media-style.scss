@@ -68,6 +68,10 @@
     }
   }
 
+  .coffee-shop__container__col__item {
+    grid-template-columns: 190px 109px 19px;
+  }
+
   .library-card__container {
     gap: 21px;
 
