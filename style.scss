@@ -286,16 +286,13 @@ header {
 }
 
 .favorites__items {
-  @include mixin-display-flex-row(space-between, center);
+  @include mixin-display-flex-col(flex-start, flex-start);
+  gap: 40px;
 
   aside {
-    @include mixin-display-flex-col(center, center);
-    gap: 40px;
+    @include mixin-display-flex-row(center, center);
+    gap: 260px;
   }
-}
-
-.favorites__items__right-col {
-  margin-right: 40px;
 }
 
 .favorites__item {
