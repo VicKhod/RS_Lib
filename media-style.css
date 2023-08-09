@@ -88,5 +88,10 @@
     margin: 18px 159px 30px;
   }
 }
+@media (max-width: 680px) {
+  .wrapper {
+    max-width: 680px;
+  }
+}
 
 /*# sourceMappingURL=media-style.css.map */
