@@ -201,7 +201,7 @@ header {
 }
 
 .about__carousel {
-  @include mixin-display-flex-row(flex-end, center);
+  @include mixin-display-flex-row(flex-start, center);
   width: 68px;
   height: 16px;
   gap: 9px;
@@ -225,6 +225,10 @@ header {
 
 .another-color {
   background-color: #bb945f;
+}
+
+.extra-circle {
+  display: none;
 }
 
 .favorites {

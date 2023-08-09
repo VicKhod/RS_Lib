@@ -21,7 +21,15 @@
   }
   .about .about__arrow {
     display: inline-block;
-    margin: 43px 23px 0;
+    width: 24px;
+    height: 24px;
+    margin: 40px 32px 0;
+  }
+  .about .about__carousel {
+    justify-content: center;
+  }
+  .about .extra-circle {
+    display: block;
   }
   .favorites__items,
   .library-card__container {
