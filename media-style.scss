@@ -1,8 +1,7 @@
 @import "./scss/mixin.scss";
 
-@media  (min-width: 640px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .wrapper {
-    min-width: 640px;
     max-width: 768px;
   }
 
@@ -98,11 +97,5 @@
     button {
       margin: 18px 159px 30px;
     }
-  }
-}
-
-@media  (max-width: 640px) {
-  .wrapper {
-    max-width: 640px;
   }
 }
