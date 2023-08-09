@@ -1,5 +1,6 @@
-@media (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .wrapper {
+    min-width: 640px;
     max-width: 768px;
   }
   .navigation {
@@ -88,9 +89,9 @@
     margin: 18px 159px 30px;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 640px) {
   .wrapper {
-    max-width: 680px;
+    max-width: 640px;
   }
 }
 
