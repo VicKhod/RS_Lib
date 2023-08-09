@@ -236,9 +236,6 @@ header {
   align-items: center;
   height: 837px;
 }
-.about h2 {
-  padding-top: 5px;
-}
 .about p {
   color: #000;
   text-align: center;
@@ -276,6 +273,7 @@ header {
   width: 68px;
   height: 16px;
   gap: 9px;
+  cursor: pointer;
 }
 .about__carousel a {
   height: 26px;

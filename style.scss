@@ -169,10 +169,6 @@ header {
   @include mixin-display-flex-col(space-between, center);
   height: 837px;
 
-  h2 {
-    padding-top: 5px;
-  }
-
   p {
     color: #000;
     text-align: center;
@@ -209,6 +205,7 @@ header {
   width: 68px;
   height: 16px;
   gap: 9px;
+  cursor: pointer;
 
   a {
     height: 26px;
